@@ -1,10 +1,9 @@
 import javax.swing.JOptionPane;
 
-public class Practica6 {
+public class Practica5{
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+
 		String nombre;
 		
 		char letras;

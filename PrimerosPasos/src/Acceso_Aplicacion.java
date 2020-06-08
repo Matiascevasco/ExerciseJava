@@ -2,7 +2,6 @@ import javax.swing.*;
 public class Acceso_Aplicacion {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		String clave = "Matias";
 		

@@ -2,8 +2,7 @@
 public class Practica10 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+
 		int numero1 = 0;
 		int numero2 = 1;
 		int objeto;

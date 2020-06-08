@@ -2,10 +2,10 @@ import java.util.*;
 public class Adivina_Numero {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		int aleatorio = (int)(Math.random()*100);
 		
+		@SuppressWarnings("resource")
 		Scanner entrada = new Scanner(System.in);
 		
 		int numero = 0;

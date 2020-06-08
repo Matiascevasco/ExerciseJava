@@ -2,8 +2,7 @@
 public class Uso_Arrays_3 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+	
 		int [][] matrix = new int [4][5];
 		
 		matrix[0][0]= 92;

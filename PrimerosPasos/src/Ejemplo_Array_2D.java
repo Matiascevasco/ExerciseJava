@@ -2,8 +2,7 @@
 public class Ejemplo_Array_2D {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+
 		double acumulado;
 		double interes = 0.10;
 		

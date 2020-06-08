@@ -6,8 +6,7 @@ import java.util.GregorianCalendar;
 public class Uso_Persona {
 
  public static void main(String[] args) {
-  // TODO Auto-generated method stub
-	 
+ 
 	 Persona[] laspersonas = new Persona[2];
 	 
 	 laspersonas[0] = new Empleado2("Luis Conde", 5000, 2009, 02, 25);

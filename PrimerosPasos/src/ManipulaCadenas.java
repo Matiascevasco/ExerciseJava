@@ -2,8 +2,7 @@
 public class ManipulaCadenas {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+
 		String nombre="matias";
 		
 		System.out.println("Mi nombre es " + nombre);

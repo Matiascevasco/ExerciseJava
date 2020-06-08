@@ -3,8 +3,7 @@ package poo;
 public class Uso_Vehiculo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+	
 		Coche mi_coche1 = new Coche();
 		
 		mi_coche1.establece_color("rojo");

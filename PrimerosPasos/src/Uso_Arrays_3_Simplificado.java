@@ -2,8 +2,7 @@
 public class Uso_Arrays_3_Simplificado {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+	
 		int [][]matrix={
 			{92,84,65,32,20},
 			{78,94,16,23,56},

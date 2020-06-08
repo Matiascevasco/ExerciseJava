@@ -17,7 +17,7 @@ public class Practica8 {
 
     System.out.print(frase.charAt(i));
    }
-
+   
   }
 
  }

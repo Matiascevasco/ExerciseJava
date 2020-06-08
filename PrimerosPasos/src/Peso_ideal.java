@@ -5,7 +5,7 @@ public class Peso_ideal {
 		// TODO Auto-generated method stub
 		
 		String genero = "";
-		
+	 
 		do {
 			genero = JOptionPane.showInputDialog("Introduce tu genero H/M ");
 					

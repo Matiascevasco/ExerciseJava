@@ -27,7 +27,7 @@ public class Practica7 {
 				resultado = true;
 						break;
 			}
-			
+	
 		} i++;
 		
 		return resultado;

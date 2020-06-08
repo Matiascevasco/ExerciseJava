@@ -10,7 +10,7 @@ public class Uso_Arrays_3_Simplificado {
 			{89,50,25,10,99},
 			{37,92,31,15,19}
 		};
-		
+	
 		for(int[]fila:matrix){
 			System.out.println();
 			

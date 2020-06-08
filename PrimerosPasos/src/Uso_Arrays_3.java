@@ -37,7 +37,7 @@ public class Uso_Arrays_3 {
 				System.out.print(matrix[i][j] + " ");
 			}
 		}
-
+		
 	}
 
 }

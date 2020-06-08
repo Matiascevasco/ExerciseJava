@@ -13,7 +13,7 @@ public class Practica3 {
   b = matias.nextInt();
   System.out.println("Ingrese el valor de c");
   c = matias.nextInt();
-
+  
   if (a > b && a > c) {
    System.out.println("a es el mayor estricto");
   }

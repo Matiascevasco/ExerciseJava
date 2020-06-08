@@ -9,7 +9,7 @@ public class Variables {
 		 * la variable edad 
 		 */
 		System.out.println(edad);
-		
+	 
 		edad=75;
 		System.out.println(edad);
 	}

@@ -4,7 +4,7 @@ public class Comprueba_Mail {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+	 
 		int arroba = 0;
 		
 		boolean punto = false;

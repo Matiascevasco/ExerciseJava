@@ -9,5 +9,5 @@ public class Entrada_numeros {
 		System.out.printf("%1.2f", x/3);
 
 	}
-
+	
 }

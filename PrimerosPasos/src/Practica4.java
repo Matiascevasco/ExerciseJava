@@ -9,7 +9,7 @@ public class Practica4 {
 
   System.out.println("Ingresar el anio");
   anio = matias.nextInt();
-
+  
   if ((anio % 4 == 0) && (anio % 100 != 0) && (anio>1582) || (anio % 400 == 0)) {
 
    System.out.println("El anio es bisiesto");

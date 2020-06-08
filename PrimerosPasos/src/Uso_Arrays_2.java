@@ -11,7 +11,7 @@ public class Uso_Arrays_2 {
 		paises[i] = JOptionPane.showInputDialog("Introduce un pais " + (i+1));
 		
 		}
-		
+	 
 		for (String elemento:paises) {
 			System.out.println("Pais " + elemento);
 		}

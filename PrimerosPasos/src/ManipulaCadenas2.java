@@ -11,7 +11,6 @@ public class ManipulaCadenas2 {
 		
 		System.out.println(frase_resumen);
 			
-
 	}
 
 }

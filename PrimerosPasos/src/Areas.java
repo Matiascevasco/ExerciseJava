@@ -12,7 +12,7 @@ public class Areas {
 		int figura=entrada.nextInt();
 		
 		switch (figura) {
-		
+	 
 		case 1:
 			
 			int lado=Integer.parseInt(JOptionPane.showInputDialog("Introduce un lado "));

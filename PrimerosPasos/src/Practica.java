@@ -7,7 +7,7 @@ public class Practica {
   Scanner matias = new Scanner(System.in);
 
   int a, b, c, lados;
-
+  
   System.out.println("Introduzca el primer lado del triangulo");
   a = matias.nextInt();
   System.out.println("Introduzca el segundo lado del triangulo");

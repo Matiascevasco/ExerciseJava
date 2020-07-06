@@ -31,7 +31,7 @@ public class PracticaQueDiaEs {
 		
 		Calendar calendario1 = Calendar.getInstance();
 		
-		calendario1.set(anio, mes, dia);
+		calendario1.set(anio, mes-1, dia);
 		
 		int DiaDelaSemana = calendario1.get(Calendar.DAY_OF_WEEK);
 		
@@ -42,6 +42,26 @@ public class PracticaQueDiaEs {
 				
 			case Calendar.TUESDAY:
 				System.out.println("Es martes");
+				break;
+				
+			case Calendar.WEDNESDAY:	
+				System.out.println("Es miércoles");
+				break;
+				
+			case Calendar.THURSDAY:
+				System.out.println("Es jueves");
+				break;
+				
+			case Calendar.FRIDAY:
+				System.out.println("Es viernes");
+				break;
+				
+			case Calendar.SATURDAY:
+				System.out.println("Es sábado");
+				break;
+				
+			case Calendar.SUNDAY:
+				System.out.println("Es domingo");
 				break;
 		}
 		

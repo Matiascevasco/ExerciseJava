@@ -5,7 +5,6 @@ import java.util.*;
 public class Uso_Empleado {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		Jefatura jefe_RRHH = new Jefatura("Juan Monzón", 55000, 2006 , 5, 29);
 		
@@ -29,12 +28,34 @@ public class Uso_Empleado {
 		
 		jefa_finanzas.establece_incentivo(5000);
 		
+		/*Empleado director_comercial = new Jefatura("Juan Monzón", 55000, 2006 , 5, 29);
 		
+		Comparable ejemplo = new Empleado("Elizabeth Grimes", 60000, 2007, 6, 21);
+		
+		if( director_comercial instanceof Empleado) {   //instanceof se puede usar en fases
+			
+			System.out.println("Es de tipo Jefatura");
+		}
+		
+		if( ejemplo instanceof Comparable) {   //instanceof se puede usar en interfases
+			
+			System.out.println("Implementa la insterfas Comparable");
+		}*/
+		
+		System.out.println(jefa_finanzas.tomar_desiciones("Dar mas dias de vacaciones a los empleados"));
+		
+		System.out.println("El jefe " + jefa_finanzas.decime_nombre() + " tiene un bonus de: " +
+		jefa_finanzas.establece_bonus(500));
+		
+		System.out.println(mis_empleados[3].decime_nombre() + " tiene un bonus de: " +
+		mis_empleados[3].establece_bonus(200));
 		
 		for(Empleado e : mis_empleados) {
 			
 			e.sube_sueldo(5);
 		}
+		
+		Arrays.sort(mis_empleados);
 		
 		for(Empleado e : mis_empleados) {
 			
@@ -46,7 +67,7 @@ public class Uso_Empleado {
 
 }
 
-class Empleado{
+class Empleado implements Comparable, Trabajadores{
 	
 	public Empleado(String nom, double sue, int anio, int mes, int dia) {
 		
@@ -62,6 +83,10 @@ class Empleado{
 		
 		id=id_siguiente;
 		
+	}
+	public double establece_bonus(double gratificacion) {
+		
+		return Trabajadores.bonus_base+gratificacion;
 	}
 	
 	public Empleado(String nom) {
@@ -92,6 +117,23 @@ class Empleado{
 		sueldo += aumento;
 	}
 	
+	public int compareTo(Object miObjeto) {
+		
+		Empleado otroEmpleado = (Empleado) miObjeto;
+		
+		if(this.sueldo<otroEmpleado.sueldo) {
+			
+			return -1;
+		}
+		
+		if(this.sueldo>otroEmpleado.sueldo) {
+			
+			return 1;
+		}
+		
+		return 0;
+	}
+	
 	private String nombre;
 	
 	private double sueldo;
@@ -102,13 +144,26 @@ class Empleado{
 	
 	private int id;
 }
-class Jefatura extends Empleado{
+class Jefatura extends Empleado implements Jefes{
 	
 	public Jefatura(String nom, double sue, int anio, int mes, int dia) {
 		
 		super(nom, sue, anio, mes, dia);
 
 	}
+	
+	public String tomar_desiciones(String desicion) {
+		
+		return "Un miembro de la direccion a tomado la desision de: " + desicion;
+	}
+	
+	public double establece_bonus(double gratificacion) {
+		
+		double prima=2000;
+		
+		return Trabajadores.bonus_base+gratificacion+prima;
+	}
+	
 	public void establece_incentivo(double b) {
 		
 		incentivo=b;

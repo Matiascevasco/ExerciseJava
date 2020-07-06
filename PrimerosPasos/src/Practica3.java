@@ -5,7 +5,7 @@ public class Practica3 {
 
   Scanner matias = new Scanner(System.in);
 
-  int a, b, c, numeros;
+  int a, b, c;
 
   System.out.println("Ingrese el valor de a ");
   a = matias.nextInt();

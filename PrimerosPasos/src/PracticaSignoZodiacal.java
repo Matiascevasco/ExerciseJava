@@ -27,13 +27,13 @@ public class PracticaSignoZodiacal {
 			System.out.println("Tu signo zodiacal es virgo");
 			
 		}else if(dia>=23 && dia<=30 && mes == 9 || dia<=22 && dia>=1 && mes == 10) {
-			System.out.println("Tu signo zodiacal es libra");
+		    System.out.println("Tu signo zodiacal es libra");
 			
 		}else if(dia>=23 && dia<=31 && mes == 10 || dia<=22 && dia>=1 && mes == 11) {
-			System.out.println("Tu signo zodiacal es escorpio");
+		    System.out.println("Tu signo zodiacal es escorpio");
 			
 		}else if(dia>=23 && dia<=30 && mes == 11 || dia<=21 && dia>=1 && mes == 12) {
-			System.out.println("Tu signo zodiacal es sagitario");
+		    System.out.println("Tu signo zodiacal es sagitario");
 			
 		}else if(dia>=22 && dia<=31 && mes == 12 || dia<=20 && dia>=1 && mes == 1) {
 			System.out.println("Tu signo zodiacal es capricornio");

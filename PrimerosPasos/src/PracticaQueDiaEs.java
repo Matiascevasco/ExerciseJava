@@ -64,7 +64,6 @@ public class PracticaQueDiaEs {
 				System.out.println("Es domingo");
 				break;
 		}
-		
 
 	}
 

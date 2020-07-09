@@ -37,7 +37,7 @@ public class Practica_tamaño {
 		
 		double res = calcular(medidas, medidas2, Integer.parseInt(cantidad));
 
-		System.out.println( String.format("Es igual a %f " +  medidas2, res));
+		System.out.println("Es igual a " +  res + " " + medidas2);
 	
 	} 
 

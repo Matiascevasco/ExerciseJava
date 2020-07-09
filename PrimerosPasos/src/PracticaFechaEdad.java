@@ -8,13 +8,13 @@ public class PracticaFechaEdad {
 		
 		int mes1 = Integer.parseInt(JOptionPane.showInputDialog("Ingresar mes de nacimiento"));
 		
-		int año1 = Integer.parseInt(JOptionPane.showInputDialog("Ingresar año de nacimiento"));
+		int anio1 = Integer.parseInt(JOptionPane.showInputDialog("Ingresar año de nacimiento"));
 		
 		int dia2 = Integer.parseInt(JOptionPane.showInputDialog("Ingresar el dia actual"));
 
 		int mes2 = Integer.parseInt(JOptionPane.showInputDialog("Ingresar el mes actual"));
 
-		int año2 = Integer.parseInt(JOptionPane.showInputDialog("Ingresar el año actual"));
+		int anio2 = Integer.parseInt(JOptionPane.showInputDialog("Ingresar el año actual"));
 		
 		if (mes1==2 && dia1>=29 || mes2==2 && dia2>=29) {
 			JOptionPane.showMessageDialog(null, "Febrero tiene 28 o 29 dias");
@@ -26,12 +26,12 @@ public class PracticaFechaEdad {
 			return;
 		}
 
-		if (dia1<=0 || dia2<=0 || dia1>31 || dia2>31 || mes1<=0 || mes2<=0 || mes1>12 || mes2>12|| año1<0 ||año2<0) {
+		if (dia1<=0 || dia2<=0 || dia1>31 || dia2>31 || mes1<=0 || mes2<=0 || mes1>12 || mes2>12|| anio1<0 ||anio2<0) {
 			JOptionPane.showMessageDialog(null, "Los dias deben ir de 1 a 31, los meses de 1 a 12 y los años deben ser mayor a 0");
 			return;
 		}
 			
-        int edad = año2-año1;
+        int edad = anio2-anio1;
 		
 		if(dia2<dia1 && mes2<=mes1) {
 			edad = edad-1;

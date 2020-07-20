@@ -5,108 +5,104 @@ import java.util.GregorianCalendar;
 
 public class Uso_Persona {
 
- public static void main(String[] args) {
- 
-	 Persona[] laspersonas = new Persona[2];
-	 
-	 laspersonas[0] = new Empleado2("Luis Conde", 5000, 2009, 02, 25);
-	 laspersonas[1] = new Alumno("Ana Lopez", "biologia");
-	 
-	 for(Persona p: laspersonas) {
-		 
-		 System.out.println(p.decime_nombre() + " , " + p.decime_descripcion());
-	 }
-	 
-   }
+	public static void main(String[] args) {
 
- }
+		Persona[] laspersonas = new Persona[2];
 
-  abstract class Persona {
+		laspersonas[0] = new Empleado2("Luis Conde", 5000, 2009, 02, 25);
+		laspersonas[1] = new Alumno("Ana Lopez", "biologia");
 
-   public Persona(String nom) {
+		for (Persona p : laspersonas) {
 
-    nombre = nom;
-   }
+			System.out.println(p.decime_nombre() + " , " + p.decime_descripcion());
+		}
 
-   public String decime_nombre() {
+	}
 
-    return nombre;
-   }
+}
 
-   public abstract String decime_descripcion();
+abstract class Persona {
 
-   private String nombre;
+	public Persona(String nom) {
 
-  }
+		nombre = nom;
+	}
 
-  class Empleado2 extends Persona {
+	public String decime_nombre() {
 
-   public Empleado2(String nom, double sue, int anio, int mes, int dia) {
+		return nombre;
+	}
 
-    super(nom);
+	public abstract String decime_descripcion();
 
-    sueldo = sue;
+	private String nombre;
 
-    GregorianCalendar calendario = new GregorianCalendar(anio, mes - 1, dia);
+}
 
-    alta_contrato = calendario.getTime();
+class Empleado2 extends Persona {
 
-    ++id_siguiente;
+	public Empleado2(String nom, double sue, int anio, int mes, int dia) {
 
-    id = id_siguiente;
+		super(nom);
 
-   }
+		sueldo = sue;
 
-   public String decime_descripcion() {
+		GregorianCalendar calendario = new GregorianCalendar(anio, mes - 1, dia);
 
-    return "Este empleado tiene un id= " + id + " con un sueldo= " + sueldo;
-   }
+		alta_contrato = calendario.getTime();
 
-   public double decime_sueldo() { //GETTER
+		++id_siguiente;
 
-    return sueldo;
-   }
+		id = id_siguiente;
 
-   public Date decime_fecha_contrato() { //GETTER
+	}
 
-    return alta_contrato;
-   }
+	public String decime_descripcion() {
 
-   public void sube_sueldo(double porcentaje) { //SETTER
+		return "Este empleado tiene un id= " + id + " con un sueldo= " + sueldo;
+	}
 
-    double aumento = sueldo * porcentaje / 100;
+	public double decime_sueldo() { // GETTER
 
-    sueldo += aumento;
-   }
+		return sueldo;
+	}
 
-   private double sueldo;
+	public Date decime_fecha_contrato() { // GETTER
 
-   private Date alta_contrato;
+		return alta_contrato;
+	}
 
-   private static int id_siguiente;
+	public void sube_sueldo(double porcentaje) { // SETTER
 
-   private int id;
-  
- }
-  
- class Alumno extends Persona{
-	 
-	 public Alumno(String nom, String car){
-		 
-		 super(nom);
-		 
-		 carrera=car;
-		 
-	 }
-	 
-	 public String decime_descripcion() {
-		 
-		 return "Este alumno está estudiando la carrera de " + carrera;
-	 }
-	 
-	 private String carrera;
- }
- 	 
+		double aumento = sueldo * porcentaje / 100;
 
+		sueldo += aumento;
+	}
 
+	private double sueldo;
 
+	private Date alta_contrato;
+
+	private static int id_siguiente;
+
+	private int id;
+
+}
+
+class Alumno extends Persona {
+
+	public Alumno(String nom, String car) {
+
+		super(nom);
+
+		carrera = car;
+
+	}
+
+	public String decime_descripcion() {
+
+		return "Este alumno está estudiando la carrera de " + carrera;
+	}
+
+	private String carrera;
+}

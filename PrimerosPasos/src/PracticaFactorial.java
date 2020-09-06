@@ -4,7 +4,7 @@ public class PracticaFactorial {
 	public static void main(String[] args) {
 
 		int factorial = 1;
-		int numero = 10;
+		int numero = 5;
 
 		for (int i = 2; i <= numero; i++) {
 
